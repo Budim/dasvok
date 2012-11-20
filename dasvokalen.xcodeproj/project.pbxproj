@@ -1,0 +1,285 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9498CAD5165B83E700A06C84 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9498CAD4165B83E700A06C84 /* UIKit.framework */; };
+		9498CAD7165B83E700A06C84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9498CAD6165B83E700A06C84 /* Foundation.framework */; };
+		9498CAD9165B83E700A06C84 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9498CAD8165B83E700A06C84 /* CoreGraphics.framework */; };
+		9498CADB165B83E700A06C84 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9498CADA165B83E700A06C84 /* CoreData.framework */; };
+		9498CAE1165B83E700A06C84 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9498CADF165B83E700A06C84 /* InfoPlist.strings */; };
+		9498CAE3165B83E700A06C84 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9498CAE2165B83E700A06C84 /* main.m */; };
+		9498CAE7165B83E700A06C84 /* DKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9498CAE6165B83E700A06C84 /* DKAppDelegate.m */; };
+		9498CAEA165B83E700A06C84 /* dasvokalen.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9498CAE8165B83E700A06C84 /* dasvokalen.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9498CAD0165B83E700A06C84 /* dasvokalen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dasvokalen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9498CAD4165B83E700A06C84 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9498CAD6165B83E700A06C84 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9498CAD8165B83E700A06C84 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9498CADA165B83E700A06C84 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		9498CADE165B83E700A06C84 /* dasvokalen-Info.plist */ = {isa = PBXFileReference; path = "dasvokalen-Info.plist"; sourceTree = "<group>"; };
+		9498CAE0165B83E700A06C84 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9498CAE2165B83E700A06C84 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9498CAE4165B83E700A06C84 /* dasvokalen-Prefix.pch */ = {isa = PBXFileReference; path = "dasvokalen-Prefix.pch"; sourceTree = "<group>"; };
+		9498CAE5165B83E700A06C84 /* DKAppDelegate.h */ = {isa = PBXFileReference; path = DKAppDelegate.h; sourceTree = "<group>"; };
+		9498CAE6165B83E700A06C84 /* DKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKAppDelegate.m; sourceTree = "<group>"; };
+		9498CAE9165B83E700A06C84 /* dasvokalen.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = dasvokalen.xcdatamodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9498CACD165B83E700A06C84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9498CAD5165B83E700A06C84 /* UIKit.framework in Frameworks */,
+				9498CAD7165B83E700A06C84 /* Foundation.framework in Frameworks */,
+				9498CAD9165B83E700A06C84 /* CoreGraphics.framework in Frameworks */,
+				9498CADB165B83E700A06C84 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9498CAC5165B83E600A06C84 = {
+			isa = PBXGroup;
+			children = (
+				9498CADC165B83E700A06C84 /* dasvokalen */,
+				9498CAD3165B83E700A06C84 /* Frameworks */,
+				9498CAD1165B83E700A06C84 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9498CAD1165B83E700A06C84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9498CAD0165B83E700A06C84 /* dasvokalen.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9498CAD3165B83E700A06C84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9498CAD4165B83E700A06C84 /* UIKit.framework */,
+				9498CAD6165B83E700A06C84 /* Foundation.framework */,
+				9498CAD8165B83E700A06C84 /* CoreGraphics.framework */,
+				9498CADA165B83E700A06C84 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9498CADC165B83E700A06C84 /* dasvokalen */ = {
+			isa = PBXGroup;
+			children = (
+				9498CAE5165B83E700A06C84 /* DKAppDelegate.h */,
+				9498CAE6165B83E700A06C84 /* DKAppDelegate.m */,
+				9498CAE8165B83E700A06C84 /* dasvokalen.xcdatamodeld */,
+				9498CADD165B83E700A06C84 /* Supporting Files */,
+			);
+			path = dasvokalen;
+			sourceTree = "<group>";
+		};
+		9498CADD165B83E700A06C84 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9498CADE165B83E700A06C84 /* dasvokalen-Info.plist */,
+				9498CADF165B83E700A06C84 /* InfoPlist.strings */,
+				9498CAE2165B83E700A06C84 /* main.m */,
+				9498CAE4165B83E700A06C84 /* dasvokalen-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9498CACF165B83E700A06C84 /* dasvokalen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9498CAED165B83E700A06C84 /* Build configuration list for PBXNativeTarget "dasvokalen" */;
+			buildPhases = (
+				9498CACC165B83E700A06C84 /* Sources */,
+				9498CACD165B83E700A06C84 /* Frameworks */,
+				9498CACE165B83E700A06C84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = dasvokalen;
+			productName = dasvokalen;
+			productReference = 9498CAD0165B83E700A06C84 /* dasvokalen.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9498CAC7165B83E600A06C84 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Veno Designs";
+			};
+			buildConfigurationList = 9498CACA165B83E600A06C84 /* Build configuration list for PBXProject "dasvokalen" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9498CAC5165B83E600A06C84;
+			productRefGroup = 9498CAD1165B83E700A06C84 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9498CACF165B83E700A06C84 /* dasvokalen */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9498CACE165B83E700A06C84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9498CAE1165B83E700A06C84 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9498CACC165B83E700A06C84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9498CAE3165B83E700A06C84 /* main.m in Sources */,
+				9498CAE7165B83E700A06C84 /* DKAppDelegate.m in Sources */,
+				9498CAEA165B83E700A06C84 /* dasvokalen.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9498CADF165B83E700A06C84 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9498CAE0165B83E700A06C84 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9498CAEB165B83E700A06C84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9498CAEC165B83E700A06C84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9498CAEE165B83E700A06C84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "dasvokalen/dasvokalen-Prefix.pch";
+				INFOPLIST_FILE = "dasvokalen/dasvokalen-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9498CAEF165B83E700A06C84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "dasvokalen/dasvokalen-Prefix.pch";
+				INFOPLIST_FILE = "dasvokalen/dasvokalen-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9498CACA165B83E600A06C84 /* Build configuration list for PBXProject "dasvokalen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9498CAEB165B83E700A06C84 /* Debug */,
+				9498CAEC165B83E700A06C84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9498CAED165B83E700A06C84 /* Build configuration list for PBXNativeTarget "dasvokalen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9498CAEE165B83E700A06C84 /* Debug */,
+				9498CAEF165B83E700A06C84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9498CAE8165B83E700A06C84 /* dasvokalen.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9498CAE9165B83E700A06C84 /* dasvokalen.xcdatamodel */,
+			);
+			currentVersion = 9498CAE9165B83E700A06C84 /* dasvokalen.xcdatamodel */;
+			path = dasvokalen.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9498CAC7165B83E600A06C84 /* Project object */;
+}
