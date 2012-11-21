@@ -7,10 +7,13 @@
 //
 
 #import "DKAppDelegate.h"
+#import "SDURLCache.h"
 
 @implementation DKAppDelegate
 
 @synthesize window = _window;
+@synthesize appNavigationController = _appNavigationController;
+
 @synthesize managedObjectContext = __managedObjectContext;
 @synthesize managedObjectModel = __managedObjectModel;
 @synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
@@ -18,8 +21,27 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+
+    SDURLCache *newCache = [[SDURLCache alloc] 
+    	initWithMemoryCapacity:1024*1024 
+        diskCapacity:1024*1024*5 
+        diskPath:[SDURLCache defaultCachePath]
+    ];
+    newCache.ignoreMemoryOnlyStoragePolicy = YES;
+    [NSURLCache setSharedURLCache:newCache];
+    
+    DasTableViewController *tableViewController = [[DasTableViewController alloc] init];
+    tableViewController.managedObjectContext = [self managedObjectContext];
+    tableViewController.persistentStoreCoordinator = [self persistentStoreCoordinator];
+    _appNavigationController = [[UINavigationController alloc] initWithRootViewController:tableViewController];
+	self.window.rootViewController = _appNavigationController;
+    [self.window addSubview:_appNavigationController.view];
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
+    });
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
